@@ -27,7 +27,7 @@ exports.run = (client,message,args) => {
     hedefKişi.roles.add(config.yetki_baslangic)
     hedefKişi.roles.add(config.register_staff)
     hedefKişi.roles.add(config.nick_staff)
-    message.guild.channels.cache.get("820634196518109184").send(embed)
+    message.guild.channels.cache.get(config.LOG_CHANNEL).send(embed)
     message.react(yes)
 
 
