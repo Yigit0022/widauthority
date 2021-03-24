@@ -12,28 +12,6 @@ console.log(`Giriş Yapıldı!`);
 client.user.setPresence({ activity: { name: STATUS }, status: 'dnd' })
 console.log(`Logged in as ${client.user.tag}!`);
 });
-
-
-      client.on('voiceStateUpdate', async (___, newState) => {
-        if (
-        newState.member.user.bot &&
-        newState.channelID &&
-        newState.member.user.id == client.user.id &&
-        !newState.selfDeaf
-        ) {
-        newState.setSelfDeaf(true);
-        }
-        });
-        client.on('voiceStateUpdate', async (___, newState) => {
-        if (
-        newState.member.user.bot &&
-        newState.channelID &&
-        newState.member.user.id == client.user.id &&
-        !newState.selfMute
-        ) {
-        newState.setSelfMute(true);
-        }
-    }); 
     const log = message => {
       console.log(`${message}`);
     };
