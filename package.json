@@ -1,16 +1,29 @@
 {
   "name": "widauthority",
   "version": "1.0.3",
-  "description": "Wid yetkili botu",
+  "description": "Public sunucular için manuel yetki yükseltme ve düşürme",
   "main": "main.js",
   "scripts": {
     "test": "node main.js"
   },
-  "author": "wid",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wid060/widauthority.git"
+  },
+  "keywords": [
+    "discord",
+    "public",
+    "yetkili"
+  ],
+  "author": "Wid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wid060/widauthority/issues"
+  },
+  "homepage": "https://github.com/Wid060/widauthority#readme",
   "dependencies": {
     "discord.js": "^12.5.1",
-    "moment": "^2.29.1",
-	"fs": "0.0.1-security",
+    "fs": "0.0.1-security",
+    "moment": "^2.29.1"
   }
 }
